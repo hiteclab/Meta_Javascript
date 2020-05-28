@@ -1,8 +1,8 @@
 [
   {
-    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#DF1438';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "color": 79,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#4F4F4F';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
     "id": 98,
-    "colorh": "FFDF1438",
     "instruccion": "fondo"
   },
   {
@@ -51,15 +51,27 @@
     "pxv": "ratonX"
   },
   {
+    "js": "c.fillStyle = \"#FFC138\";",
+    "id": 102,
+    "colorh": "FFFFC138",
+    "instruccion": "relleno"
+  },
+  {
     "pxt1": 10,
     "pyt1": 10,
-    "pxt2": 50,
-    "pyt2": 50,
+    "pxt2": 500,
+    "pyt2": 500,
     "pxt3": 0,
-    "js": "c.beginPath();\n c.moveTo(10,10);\n c.lineTo(50,50);\n c.lineTo(0,100);\n c.fill();\n c.moveTo(10,10);\n c.lineTo(50,50);\n c.lineTo(0,100);\n c.closePath();\n c.stroke();\n",
+    "js": "c.beginPath();\n c.moveTo(10,10);\n c.lineTo(500,500);\n c.lineTo(0,700);\n c.fill();\n c.moveTo(10,10);\n c.lineTo(500,500);\n c.lineTo(0,700);\n c.closePath();\n c.stroke();\n",
     "id": 51,
-    "pyt3": 100,
+    "pyt3": 700,
     "instruccion": "triangulo"
+  },
+  {
+    "color": 254,
+    "js": "c.strokeStyle = \"#FEFEFE\";",
+    "id": 115,
+    "instruccion": "colorlinea"
   },
   {
     "pxt2v": "ratonX",
@@ -71,16 +83,16 @@
     "instruccion": "linea"
   },
   {
-    "px": 10,
-    "py": 10,
-    "js": "        var image = new Image();\n var downloadingImage = new Image();\n downloadingImage.onload = function(){\n   image.src = this.src;\n   c.drawImage(image, 10, 10);\n };\n downloadingImage.src = 'data/logolab.png';",
+    "px": 50,
+    "py": 200,
+    "js": "var image = new Image();\n   image.src = 'data/logolab.png';\n   c.drawImage(image, 50, 200);\n",
     "id": 109,
     "nombre": "logolab.png",
     "instruccion": "imagen"
   },
   {
-    "color": 20,
-    "js": "c.fillStyle = \"#141414\";",
+    "color": 254,
+    "js": "c.fillStyle = \"#FEFEFE\";",
     "id": 102,
     "instruccion": "relleno"
   },
@@ -91,20 +103,11 @@
     "instruccion": "tamtexto"
   },
   {
-    "texto": "hola",
+    "texto": "Meta_Javascript",
     "px": 60,
     "py": 60,
-    "js": "c.fillText(\"hola\",60, 60);",
+    "js": "c.fillText(\"Meta_Javascript\",60, 60);",
     "id": 116,
     "instruccion": "texto"
-  },
-  {
-    "pxt1": 0,
-    "pyt1": 66,
-    "pxt2v": "ancho",
-    "pyt2": 66,
-    "js": "c.beginPath();\n c.moveTo(0, 66);\n c.lineTo(ancho, 66);\n c.stroke();",
-    "id": 108,
-    "instruccion": "linea"
   }
 ]
