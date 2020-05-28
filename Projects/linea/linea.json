@@ -1,0 +1,9 @@
+[{
+  "pxt2v": "ratonX",
+  "pxt1v": "ancho",
+  "pyt1v": "alto",
+  "js": "c.beginPath();\n c.moveTo(ancho, alto);\n c.lineTo(ratonX, ratonY);\n c.stroke();",
+  "id": 108,
+  "pyt2v": "ratonY",
+  "instruccion": "linea"
+}]
