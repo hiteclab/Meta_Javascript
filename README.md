@@ -1,7 +1,7 @@
 # Meta_Javascript
 [![Meta Processing Alpha 1.0](https://img.youtube.com/vi/bj78B7jIkTU/0.jpg)](https://youtu.be/bj78B7jIkTU "Meta Processing Alpha 1.0")
 
-META_JAVASCRIPT Version Alpha 1.0
+**META_JAVASCRIPT Version Alpha 1.0**
 
 Is a meta-programming language for beginners developed using Processing 3.4. 
 Is a fork of [META_PROCESSING](https://github.com/hiteclab/Meta_Processing) designed to help you create Javascript interactive code.
@@ -16,7 +16,7 @@ license GPL v.3
 At Hiteclab, http://hiteclab.libertadores.edu.co
 Fundación Universitaria Los Libertadores, Bogotá, Colombia
 
-META_JAVASCRIPT Version Alpha 1.0
+**META_JAVASCRIPT Version Alpha 1.0**
  
 Es un lenguaje de meta-programación para principiantes desarrollado usando Processing 3.4.
 Está basado en [META_PROCESSING](https://github.com/hiteclab/Meta_Processing) y fue diseñado para ayudarte a crear código Javascript interactivo.
