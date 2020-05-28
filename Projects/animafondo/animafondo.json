@@ -1,0 +1,15 @@
+[
+  {
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = 'rgba('+fondo+', '+fondo+', '+fondo+', 1)';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "colorv": "fondo",
+    "instruccion": "fondo"
+  },
+  {
+    "variable": "fondo",
+    "valor": "0.7",
+    "js": "fondo = fondo + 0.7;",
+    "id": 62,
+    "instruccion": "sumar"
+  }
+]

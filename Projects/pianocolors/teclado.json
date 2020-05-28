@@ -1,0 +1,163 @@
+[
+  {
+    "valor1v": "tecla",
+    "visible": true,
+    "js": "if( tecla == 'A' ){",
+    "id": 105,
+    "valor2": "'A'",
+    "condicion": "=",
+    "instruccion": "si"
+  },
+  {
+    "si": true,
+    "js": "playTone(\"C4\", \"sine\", 0.3);",
+    "id": 110,
+    "nota": "C4",
+    "instruccion": "tocanota"
+  },
+  {
+    "si": true,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#30CA38';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "colorh": "FF30CA38",
+    "instruccion": "fondo"
+  },
+  {
+    "valor1v": "tecla",
+    "visible": true,
+    "js": "if( tecla == 'S' ){",
+    "id": 105,
+    "valor2": "'S'",
+    "condicion": "=",
+    "instruccion": "si"
+  },
+  {
+    "si": true,
+    "js": "playTone(\"D4\", \"sine\", 0.3);",
+    "id": 110,
+    "nota": "D4",
+    "instruccion": "tocanota"
+  },
+  {
+    "si": true,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#E23438';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "colorh": "FFE23438",
+    "instruccion": "fondo"
+  },
+  {
+    "valor1v": "tecla",
+    "visible": true,
+    "js": "if( tecla == 'D' ){",
+    "id": 105,
+    "valor2": "'D'",
+    "condicion": "=",
+    "instruccion": "si"
+  },
+  {
+    "si": true,
+    "js": "playTone(\"E4\", \"sine\", 0.3);",
+    "id": 110,
+    "nota": "E4",
+    "instruccion": "tocanota"
+  },
+  {
+    "si": true,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#174E98';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "colorh": "FF174E98",
+    "instruccion": "fondo"
+  },
+  {
+    "valor1v": "tecla",
+    "visible": true,
+    "js": "if( tecla == 'F' ){",
+    "id": 105,
+    "valor2": "'F'",
+    "condicion": "=",
+    "instruccion": "si"
+  },
+  {
+    "si": true,
+    "js": "playTone(\"F4\", \"sine\", 0.3);",
+    "id": 110,
+    "nota": "F4",
+    "instruccion": "tocanota"
+  },
+  {
+    "si": true,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#FED938';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "colorh": "FFFED938",
+    "instruccion": "fondo"
+  },
+  {
+    "valor1v": "tecla",
+    "visible": true,
+    "js": "if( tecla == 'G' ){",
+    "id": 105,
+    "valor2": "'G'",
+    "condicion": "=",
+    "instruccion": "si"
+  },
+  {
+    "si": true,
+    "js": "playTone(\"G4\", \"sine\", 0.3);",
+    "id": 110,
+    "nota": "G4",
+    "instruccion": "tocanota"
+  },
+  {
+    "si": true,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#F69738';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "colorh": "FFF69738",
+    "instruccion": "fondo"
+  },
+  {
+    "valor1v": "tecla",
+    "visible": true,
+    "js": "if( tecla == 'H' ){",
+    "id": 105,
+    "valor2": "'H'",
+    "condicion": "=",
+    "instruccion": "si"
+  },
+  {
+    "si": true,
+    "js": "playTone(\"A4\", \"sine\", 0.3);",
+    "id": 110,
+    "nota": "A4",
+    "instruccion": "tocanota"
+  },
+  {
+    "si": true,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#F321A9';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "colorh": "FFF321A9",
+    "instruccion": "fondo"
+  },
+  {
+    "valor1v": "tecla",
+    "visible": true,
+    "js": "if( tecla == 'J' ){",
+    "id": 105,
+    "valor2": "'J'",
+    "condicion": "=",
+    "instruccion": "si"
+  },
+  {
+    "si": true,
+    "js": "playTone(\"B4\", \"sine\", 0.3);",
+    "id": 110,
+    "nota": "B4",
+    "instruccion": "tocanota"
+  },
+  {
+    "si": true,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#10A691';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "colorh": "FF10A691",
+    "instruccion": "fondo"
+  }
+]

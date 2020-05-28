@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>anima</title>
+<script>
+        var lastfill='white';
+        var cn ;
+        var c;
+        var m = { x: innerWidth/2, y: innerHeight/2 };
+
+ var paraciclo=0,tecla=0,click=0,ratonX=0,ratonY=0,ancho=0,alto=0,px=0,py=1000;
+
+ window.addEventListener('mousedown', e => {
+ click = event.button;
+
+
+
+});
+document.onkeydown = function(e){
+ var keycode = event.which || event.keyCode;
+ tecla = String.fromCharCode(keycode)
+
+
+};
+ancho =innerWidth;
+ alto =innerHeight;
+
+
+ window.onmousemove = function (e)
+            {
+            m.x =e.clientX;
+            m.y = e.clientY;
+        ratonX = m.x;
+        ratonY = m.y;
+ }
+
+
+
+
+ window.onload = function myfunction() {
+            cn = document.getElementById('cw');
+            c = cn.getContext('2d');
+            resize(); anim()
+        }
+
+
+ window.onresize = function () {
+
+       resize();
+
+        }
+        function resize() {
+            cn.height = innerHeight;
+            cn.width = innerWidth;
+        ancho =innerWidth;
+            alto =innerHeight;
+ }
+
+
+ function anim() {
+            requestAnimationFrame(anim);
+            c.fillStyle = 'white';
+
+ lastfill = c.fillStyle;
+ c.fillStyle = 'rgba('+px+', '+px+', '+px+', 1)';
+ c.fillRect(0,0,cw.width, cw.height);
+ c.fillStyle = lastfill;
+px = px + 0.5;
+py = py - 0.5;
+c.fillStyle = "#F9DF38";
+c.beginPath();
+ c.ellipse(200, py, 200, 200, 0, 0, Math.PI*2);
+ c.fill();
+ c.closePath();
+
+c.fillStyle = "#134F9F";
+ c.fillRect(0, 750, ancho, 400);
+ c.strokeRect(0, 750, ancho, 400);
+
+
+}
+
+</script>
+<style>
+#cw {
+    position: fixed;
+    z-index: -1;
+ }
+
+ body {
+        margin:0;
+        padding:0;
+        background-color:rgba(168,168,168);
+ }
+
+</style>
+</head>
+<body>
+    <canvas id="cw"></canvas>
+</body>
+</html>

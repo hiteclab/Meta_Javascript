@@ -1,0 +1,6 @@
+[{
+  "js": " var audio = new Audio('data/melo.wav');\n audio.play();",
+  "id": 100,
+  "nombre": "melo.wav",
+  "instruccion": "sonido"
+}]
