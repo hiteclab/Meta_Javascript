@@ -16,6 +16,13 @@ license GPL v.3
 At Hiteclab, http://hiteclab.libertadores.edu.co
 Fundación Universitaria Los Libertadores, Bogotá, Colombia
 
+**Download Book Meta_Javascript Alpha 1.0**
+[Draft Version 1.1 English](https://github.com/hiteclab/Meta_Javascript/raw/master/MetajavascriptENG.pdf)
+
+**Read Online Book Meta_Javascript Alpha 1.0**
+[Draft Version 1.1 English](https://github.com/hiteclab/Meta_Javascript/blob/master/MetajavascriptENG.pdf)
+
+
 **META_JAVASCRIPT Alpha 1.0 Español**
  
 Es un lenguaje de meta-programación para principiantes desarrollado usando [Processing](https://processing.org/) 3.4.
@@ -31,3 +38,9 @@ Licencia  GPL v.3
 
 En el laboratorio Hiteclab, http://hiteclab.libertadores.edu.co
 Fundación Universitaria Los Libertadores, Bogotá, Colombia
+
+**Descargar Libro Meta_Javascript Alpha 1.0**
+[Versión de prueba 1.1 Español](https://github.com/hiteclab/Meta_Javascript/raw/master/MetajavascriptESP.pdf)
+
+**Leer en linea Libro Meta_Javascript Alpha 1.0**
+[Versión de prueba 1.1 Español](https://github.com/hiteclab/Meta_Javascript/blob/master/MetajavascriptESP.pdf)
