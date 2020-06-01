@@ -22,6 +22,7 @@ Fundación Universitaria Los Libertadores, Bogotá, Colombia
 **Read Online Book Meta_Javascript Alpha 1.0**
 [Draft Version 1.1 English](https://github.com/hiteclab/Meta_Javascript/blob/master/MetajavascriptENG.pdf)
 
+[![Meta Processing Alpha 1.0](https://img.youtube.com/vi/bj78B7jIkTU/0.jpg)](https://www.youtube.com/watch?v=d6UnVuAlSkA&feature=youtu.be "Meta Processing Alpha 1.0")
 
 **META_JAVASCRIPT Alpha 1.0 Español**
  
