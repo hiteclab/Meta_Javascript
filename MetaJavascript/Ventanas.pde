@@ -1493,6 +1493,11 @@ void qrwindow(){
   void idioma() {
 
     background(0);
+    fill(fondoresalta);
+    // se carga el ultimo lenguaje seleccionado
+    String[] lastlang =loadStrings(codefolder+"/lang/lastlang.txt");
+    int lang=int(lastlang[0]);
+    rect(0,40+lang*20,width,20);
     posy= mouseY-mouseY % 20;
     y= ((posy-40)/20)+1;
     fill(120);
@@ -1541,10 +1546,7 @@ void qrwindow(){
     
     text ("Pусский", 20, 317);
     text ("Deutsch", 20, 337);
-    text(idiomagui.getString("Nuevo")+" "+idiomagui.getString("Idioma"), 20, 357);
-;
-    text(idiomagui.getString("Nuevo")+" "+idiomagui.getString("Idioma"), 20, 357);
-    
+    text(idiomagui.getString("Nuevo")+" "+idiomagui.getString("Idioma"), 20, 357);    
     
     
   }

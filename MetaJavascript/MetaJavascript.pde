@@ -21,7 +21,7 @@
 // Se habilita la opcion de crear condiciones anidadas
 // Se crea servidor local HTTP 
 // A partir de esta versión se ejecutan los proyectos en el servidor local, de manera que pueda ser probar desde dispositivos móbiles conectados a la misma red
-// Se genera ventana con código QR que direcciona a una URL que permita ejecutar el proyecto desde dispositivos móbiles conectados a la misma red
+// Se genera ventana con código QR que direcciona a una URL que permita ejecutar el proyecto desde dispositivos móviles conectados a la misma red
 // Se agrega tecla F1 para Generar código QR proyecto (ejecuta guardameta, guarda js, renueva servidor local y genera código QR)
 // Se agrega ícono: Actualizar (ejecuta guardameta, guarda js y renueva servidor local)
 // Se agrega ícono: Generar código QR proyecto (ejecuta guardameta, guarda js, renueva servidor local y genera código QR)
@@ -33,6 +33,7 @@
 // Se correge error al presionar ctrl+x en primera linea de cualquier pestaña cuando tenia una sola línea
 // Se agrega instrucción video
 // Se agregan idiomas: Punjabi, Kannada, Tamil, Bengali, Aleman, Ruso y Coreano
+// Se agranda el tamaño de las pestañas de código
 
 
 
