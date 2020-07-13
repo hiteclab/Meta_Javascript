@@ -28,7 +28,7 @@ Es un lenguaje de meta-programación para principiantes desarrollado usando [Pro
 Está basado en [META_PROCESSING](https://github.com/hiteclab/Meta_Processing) y fue diseñado para ayudarte a crear código Javascript interactivo.
 Puedes escribir y leer el mismo código en 14 idiomas diferentes: Español, Francés, Hindi (हिन्दी), Japonés (日本人), Italiano, Chino (中文), Portugués, Inglés, Punjabi (ਪੰਜਾਬੀ), Kannada (ಕನ್ನಡ), Bengali (বাংলা), Tamil (தமிழ்), Koreano (한국어), Ruso (Pусский) y Aleman (Deutsch). Todo el código creado con Meta_Javascript es exportado como código en lenguaje Javascript. Es un entorno de programación diseñado para no dejarte cometer errores comunes de sintaxis. Ahora permite ejecutar el proyecto en dispositivos móviles conectados a la misma red escaneando un código QR. Y se agrega soporte para comunicarse con tarjetas Arduino usando Firmata y tarjetas ESP usando la librería IoTControllerAP https://github.com/hiteclab/IoTControllerAP.
 
-Funciona en Windows 64, GNU/Linux 64 y Mac OS
+Funciona en Windows 64, GNU/Linux 64 y Mac OS.
 
 Creado por Jose David Cuartas, (c) 2020 
 Licencia  GPL v.3
