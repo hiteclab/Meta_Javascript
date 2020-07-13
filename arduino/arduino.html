@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>arduino</title>
+<script>
+        var lastfill='white';
+        var cn ;
+        var c;
+        var m = { x: innerWidth/2, y: innerHeight/2 };
+
+ var ciclo=0,tecla=0,click=0,ratonX=0,ratonY=0,ancho=0,alto=0,x=0,giro=0;
+
+ window.addEventListener('mousedown', e => {
+ click = event.button;
+
+var read = new XMLHttpRequest();
+ read.open("GET", "http://192.168.0.18:8000/?asdh=13", false);
+ read.overrideMimeType("text/html");
+ read.onreadystatechange = function() {
+    if (read.readyState === 4) if(read.status === 200 || read.status == 0) {
+      var t = read.responseText;
+}
+}
+read.send();
+var read = new XMLHttpRequest();
+ read.open("GET", "http://192.168.0.18:8000/?am=7&pos=0", false);
+ read.overrideMimeType("text/html");
+  read.send();
+
+});
+document.onkeydown = function(e){
+ var keycode = event.which || event.keyCode;
+ tecla = String.fromCharCode(keycode)
+var read = new XMLHttpRequest();
+ read.open("GET", "http://192.168.0.18:8000/?asdl=13", false);
+ read.overrideMimeType("text/html");
+ read.onreadystatechange = function() {
+    if (read.readyState === 4) if(read.status === 200 || read.status == 0) {
+      var t = read.responseText;
+}
+}
+read.send();
+var read = new XMLHttpRequest();
+ read.open("GET", "http://192.168.0.18:8000/?am=7&pos=180", false);
+ read.overrideMimeType("text/html");
+  read.send();
+
+};
+ancho =innerWidth;
+ alto =innerHeight;
+
+function velicidad(cuadros) {
+    let fechaactual = null;
+    const fecha = Date.now();
+    do {
+        fechaactual = Date.now();
+    } while (fechaactual - fecha < cuadros);
+}
+
+
+ window.onmousemove = function (e)
+            {
+            m.x =e.clientX;
+            m.y = e.clientY;
+        ratonX = m.x;
+        ratonY = m.y;
+ }
+
+
+
+
+ window.onload = function myfunction() {
+            cn = document.getElementById('cw');
+            c = cn.getContext('2d');
+            resize(); anim()
+        }
+
+
+ window.onresize = function () {
+
+       resize();
+
+        }
+        function resize() {
+            cn.height = innerHeight;
+            cn.width = innerWidth;
+        ancho =innerWidth;
+            alto =innerHeight;
+ setup();
+ }
+
+function setup(){
+
+
+
+}
+
+ function anim() {
+            requestAnimationFrame(anim);
+            c.fillStyle = 'white';
+
+fetch('http://192.168.0.18:8000/?aed=12')
+.then(response => response.text())
+.then(data => x = data);
+if( x == 1 )
+{
+     lastfill = c.fillStyle;
+ c.fillStyle = '#16E538';
+ c.fillRect(0,0,cw.width, cw.height);
+ c.fillStyle = lastfill;
+    }
+        else {
+         lastfill = c.fillStyle;
+ c.fillStyle = '#FC3238';
+ c.fillRect(0,0,cw.width, cw.height);
+ c.fillStyle = lastfill;
+        }
+fetch('http://192.168.0.18:8000/?aea=2')
+.then(response => response.text())
+.then(data => giro = data);
+if( giro > 100 )
+{
+     lastfill = c.fillStyle;
+ c.fillStyle = '#EEEEEE';
+ c.fillRect(0,0,cw.width, cw.height);
+ c.fillStyle = lastfill;
+    }
+if( giro > 400 )
+{
+     lastfill = c.fillStyle;
+ c.fillStyle = '#8E8E8E';
+ c.fillRect(0,0,cw.width, cw.height);
+ c.fillStyle = lastfill;
+    }
+if( giro > 600 )
+{
+     lastfill = c.fillStyle;
+ c.fillStyle = '#323232';
+ c.fillRect(0,0,cw.width, cw.height);
+ c.fillStyle = lastfill;
+    }
+
+velicidad(600-(60*10));
+}
+
+</script>
+<style>
+#cw {
+    position: fixed;
+    z-index: -1;
+ }
+
+ body {
+        margin:0;
+        padding:0;
+        background-color:rgba(168,168,168);
+ }
+
+</style>
+</head>
+<body>
+    <canvas id="cw"></canvas>
+</body>
+</html>

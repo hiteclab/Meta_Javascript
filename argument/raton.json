@@ -1,0 +1,6 @@
+[{
+  "js": "window.location.replace(\"http://localhost:8000/argument.html?state=1\");",
+  "id": 70,
+  "hipervinculo": "localhost:8000/argument.html?state=1",
+  "instruccion": "hipervinculo"
+}]
