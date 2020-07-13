@@ -1,11 +1,10 @@
 void configuracion() {
   
   println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-  println("  META_JAVASCRIPT Version Alpha 1.0");
+  println("  META_JAVASCRIPT Version Alpha 1.2");
   println("  Developed using Processing 3.4");
   println("  (c) 2020  Jose David Cuartas, GPL v.3\n  Hiteclab, http://hiteclab.libertadores.edu.co/\n  Fundación Universitaria Los Libertadores, Colombia");
   println("  Contact us: hiteclab@libertadores.edu.co");
-
 
 
   codefolder=dataPath("");
@@ -37,11 +36,17 @@ void configuracion() {
   
   iconos = loadImage("BarraOK.png");
   
+  
+
+  
+  
+  
   // Se revisa si el archivo lastopen.txt existe y se cargan todos los archivos del proyecto
   File archivo = dataFile(sketchfolder+"lastopen.txt");
-  String lastopenfile = archivo.getPath();
+  //String lastopenfile = archivo.getPath();
   existe = archivo.isFile();
   existeproyecto=false;
+  //println(sketchfolder);
   
   
   if(existe == true){
@@ -50,7 +55,7 @@ void configuracion() {
   
   // se revisa si existe el proyecto al que apunta el archivo lastopen.txt
   archivo = dataFile(sketchfolder+"/"+proyectonombre+"/"+proyectonombre+".json");
-  lastopenfile = archivo.getPath();
+  //lastopenfile = archivo.getPath();
   existeproyecto = archivo.isFile();
   }
   if(existeproyecto == true){
@@ -59,7 +64,8 @@ void configuracion() {
         cargamouse = loadJSONArray(sketchfolder+"/"+proyectonombre+"/"+"raton.json");
         cargateclado = loadJSONArray(sketchfolder+"/"+proyectonombre+"/"+"teclado.json");
       
-        configuration = loadJSONArray(sketchfolder+"/"+proyectonombre+"/configuracion.json");
+        configuration = loadJSONArray(sketchfolder+"/"+proyectonombre+"/propiedades.json");
+        cargaconfiguracion = loadJSONArray(sketchfolder+"/"+proyectonombre+"/configuracion.json");
         cargavars = loadJSONArray(sketchfolder+"/"+proyectonombre+"/variables.json");
       
       
@@ -68,10 +74,15 @@ void configuracion() {
           fullscreen=false;
         } else fullscreen=true;
       
-        // poner en el archivo configuracion.json en la key llamada "cuadros" el volor 0 para tener la velocidad por defecto de processing
-        if (configuration.getJSONObject(1).getInt("cuadros")!= 0) frameRate(configuration.getJSONObject(1).getInt("cuadros"));
-        if (configuration.getJSONObject(1).getInt("cuadros")!= 0) velocidad= configuration.getJSONObject(1).getInt("cuadros");
-        frameRate(velocidad);
+        // poner en el archivo propiedades.json en la key llamada "cuadros" el volor 0 para tener la velocidad por defecto de Javascript
+        if (configuration.getJSONObject(1).getInt("cuadros")!= 0) {
+          //frameRate(configuration.getJSONObject(1).getInt("cuadros"));
+        //if (configuration.getJSONObject(1).getInt("cuadros")!= 0) 
+          velocidad= configuration.getJSONObject(1).getInt("cuadros");}
+        //frameRate(velocidad);
+        port= configuration.getJSONObject(2).getInt("puerto");
+        try { arduino = new Arduino(this, Arduino.list()[port], 57600); } catch (Exception e) {} // se activa la comunicación con el arduino
+        
     }
   
    else {
@@ -96,6 +107,7 @@ void configuracion() {
       runwindow=false;
       codetab=0;
       proyectonombre="meta";
+      port=0;
        
       //line="";
       line=""+idiomaactual.get(str(-1));
@@ -114,8 +126,6 @@ void configuracion() {
     
   }
   
-
-
 
   varenterasval = new IntList();
   varenterasnom = new StringList();
@@ -180,6 +190,55 @@ void inilang(int lang){
         idiomaactual = loadJSONObject(codefolder+"/lang/Eng/instruccioneslist.json");
         prototipoinstru = loadJSONObject(codefolder+"/lang/Eng/instrucciones.json");
       }
-
+      
+      //  Punjabi
+      if (lang==8) {
+        idiomagui = loadJSONObject(codefolder+"/lang/pa/gui.json");
+        idiomaactual = loadJSONObject(codefolder+"/lang/pa/instruccioneslist.json");
+        prototipoinstru = loadJSONObject(codefolder+"/lang/pa/instrucciones.json");
+      } 
+      // Kannada
+      if (lang==9) {
+        idiomagui = loadJSONObject(codefolder+"/lang/kn/gui.json");
+        idiomaactual = loadJSONObject(codefolder+"/lang/kn/instruccioneslist.json");
+        prototipoinstru = loadJSONObject(codefolder+"/lang/kn/instrucciones.json");
+      }
+      //  Bengali
+      if (lang==10) {
+        idiomagui = loadJSONObject(codefolder+"/lang/bn/gui.json");
+        idiomaactual = loadJSONObject(codefolder+"/lang/bn/instruccioneslist.json");
+        prototipoinstru = loadJSONObject(codefolder+"/lang/bn/instrucciones.json");
+      }
+      //  Tamil
+      if (lang==11) {
+        idiomagui = loadJSONObject(codefolder+"/lang/ta/gui.json");
+        idiomaactual = loadJSONObject(codefolder+"/lang/ta/instruccioneslist.json");
+        prototipoinstru = loadJSONObject(codefolder+"/lang/ta/instrucciones.json");
+      }
+      //  Korean
+      if (lang==12) {
+        idiomagui = loadJSONObject(codefolder+"/lang/ko/gui.json");
+        idiomaactual = loadJSONObject(codefolder+"/lang/ko/instruccioneslist.json");
+        prototipoinstru = loadJSONObject(codefolder+"/lang/ko/instrucciones.json");
+      }
+      //  Russian
+      if (lang==13) {
+        idiomagui = loadJSONObject(codefolder+"/lang/ru/gui.json");
+        idiomaactual = loadJSONObject(codefolder+"/lang/ru/instruccioneslist.json");
+        prototipoinstru = loadJSONObject(codefolder+"/lang/ru/instrucciones.json");
+      }
+      //  German
+      if (lang==14) {
+        idiomagui = loadJSONObject(codefolder+"/lang/de/gui.json");
+        idiomaactual = loadJSONObject(codefolder+"/lang/de/instruccioneslist.json");
+        prototipoinstru = loadJSONObject(codefolder+"/lang/de/instrucciones.json");
+      }
+      
+      // Newlang
+      if (lang==15) {
+        idiomagui = loadJSONObject(codefolder+"/lang/Newlang/gui.json");
+        idiomaactual = loadJSONObject(codefolder+"/lang/Newlang/instruccioneslist.json");
+        prototipoinstru = loadJSONObject(codefolder+"/lang/Newlang/instrucciones.json");
+      }
 
 }
