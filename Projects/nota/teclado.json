@@ -1,6 +1,0 @@
-[{
-  "js": "playTone(\"E4\", \"sine\", 0.3);",
-  "id": 110,
-  "nota": "E4",
-  "instruccion": "tocanota"
-}]
