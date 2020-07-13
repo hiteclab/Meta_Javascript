@@ -1,0 +1,22 @@
+[
+  {
+    "color": 131,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#838383';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "instruccion": "fondo"
+  },
+  {
+    "tamtexto": "44",
+    "js": "c.font = '44px sans-serif';",
+    "id": 117,
+    "instruccion": "tamtexto"
+  },
+  {
+    "texto": "Hola Mundo!",
+    "px": 100,
+    "py": 100,
+    "js": "c.fillText(\"Hola Mundo!\",100, 100);",
+    "id": 116,
+    "instruccion": "texto"
+  }
+]

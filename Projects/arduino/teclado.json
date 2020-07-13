@@ -1,0 +1,16 @@
+[
+  {
+    "pin": 13,
+    "valor": 0,
+    "js": "var read = new XMLHttpRequest();\n read.open(\"GET\", \"http://192.168.0.18:8000/?asdl=13\", false);\n read.overrideMimeType(\"text/html\");\n read.onreadystatechange = function() {\n    if (read.readyState === 4) if(read.status === 200 || read.status == 0) {\n      var t = read.responseText;\n}\n}\nread.send();",
+    "id": 10,
+    "instruccion": "salidadigital"
+  },
+  {
+    "pin": 7,
+    "variable": "180",
+    "js": "var read = new XMLHttpRequest();\n read.open(\"GET\", \"http://192.168.0.18:8000/?am=7&pos=180\", false);\n read.overrideMimeType(\"text/html\");\n  read.send();",
+    "id": 13,
+    "instruccion": "servo"
+  }
+]

@@ -1,0 +1,13 @@
+entradadigital ( 12, x ) 
+si  ( x = 1 )
+    fondo ( #FF16E538 ) 
+Sino           fondo ( #FFFC3238 ) 
+entradaanalógica ( 2, giro ) 
+si  ( giro > 100 )
+    fondo ( 238 ) 
+si  ( giro > 400 )
+    fondo ( 142 ) 
+si  ( giro > 600 )
+    fondo ( 50 ) 
+vacío
+

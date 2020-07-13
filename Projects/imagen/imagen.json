@@ -1,0 +1,16 @@
+[
+  {
+    "color": 0,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#000000';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "instruccion": "fondo"
+  },
+  {
+    "js": "var image = new Image();\n   image.src = 'data/logolab.png';\n   c.drawImage(image, ratonX, ratonY);\n",
+    "id": 109,
+    "pyv": "ratonY",
+    "nombre": "logolab.png",
+    "instruccion": "imagen",
+    "pxv": "ratonX"
+  }
+]

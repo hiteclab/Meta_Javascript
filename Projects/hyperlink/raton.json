@@ -1,0 +1,6 @@
+[{
+  "js": "window.location.replace(\"http://www.google.com\");",
+  "id": 70,
+  "hipervinculo": "www.google.com",
+  "instruccion": "hipervinculo"
+}]

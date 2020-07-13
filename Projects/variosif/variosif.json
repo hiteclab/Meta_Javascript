@@ -1,0 +1,36 @@
+[
+  {
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#349C38';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "colorh": "FF349C38",
+    "instruccion": "fondo"
+  },
+  {
+    "valor1v": "ratonX",
+    "visible": true,
+    "js": "if( ratonX > 10 )",
+    "id": 105,
+    "valor2": "10",
+    "condicion": ">",
+    "instruccion": "si"
+  },
+  {
+    "valor1v": "ratonX",
+    "visible": true,
+    "js": "if( ratonX < 50 )",
+    "id": 105,
+    "valor2": "50",
+    "condicion": "<",
+    "instruccion": "si"
+  },
+  {
+    "tyv": "alto",
+    "tx": 40,
+    "si": true,
+    "px": 10,
+    "py": 10,
+    "js": " c.fillRect(10, 10, 40, alto);\n c.strokeRect(10, 10, 40, alto);\n",
+    "id": 114,
+    "instruccion": "rectangulo"
+  }
+]
