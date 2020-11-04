@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>anima</title>
+<script>
+        var lastfill='white';
+        var cn ;
+        var c;
+        var m = { x: innerWidth/2, y: innerHeight/2 };
+
+ var ciclo=0,tecla=0,click=0,ratonX=0,ratonY=0,ancho=0,alto=0,px=0,py=1000;
+
+ window.addEventListener('mousedown', e => {
+ click = event.button;
+
+
+
+});
+document.onkeydown = function(e){
+ var keycode = event.which || event.keyCode;
+ tecla = String.fromCharCode(keycode)
+
+
+};
+ancho =innerWidth;
+ alto =innerHeight;
+
+function velicidad(cuadros) {
+    let fechaactual = null;
+    const fecha = Date.now();
+    do {
+        fechaactual = Date.now();
+    } while (fechaactual - fecha < cuadros);
+}
+
+
+ window.onmousemove = function (e)
+            {
+            m.x =e.clientX;
+            m.y = e.clientY;
+        ratonX = m.x;
+        ratonY = m.y;
+ }
+
+
+
+
+ window.onload = function myfunction() {
+            cn = document.getElementById('cw');
+            c = cn.getContext('2d');
+            resize();  anim()
+        }
+
+
+ window.onresize = function () {
+
+       resize();
+        }
+ function resize() {
+            cn.height = innerHeight;
+            cn.width = innerWidth;
+        ancho =innerWidth;
+            alto =innerHeight;
+ c.fillStyle = lastfill;
+ setup();
+}
+
+function setup(){
+
+
+
+}
+
+ function anim() {
+            requestAnimationFrame(anim);
+            c.fillStyle = 'white';
+
+ lastfill = c.fillStyle;
+ c.fillStyle = 'rgba('+px+', '+px+', '+px+', 1)';
+ c.fillRect(0,0,cw.width, cw.height);
+ c.fillStyle = lastfill;
+c.strokeStyle = 'rgba(0, 0, 0, 0)';
+px = px + 0.5;
+py = py - 0.5;
+c.fillStyle = "#F9DF38";
+c.beginPath();
+ c.ellipse(200, py, 200, 200, 0, 0, Math.PI*2);
+ c.fill();
+ c.stroke();
+ c.closePath();
+
+c.fillStyle = "#134F9F";
+ c.fillRect(0, 700, ancho, 400);
+ c.strokeRect(0, 700, ancho, 400);
+
+
+velicidad(600-(60*10));
+}
+
+</script>
+<style>
+#cw {
+    position: fixed;
+    z-index: -1;
+ }
+
+ body {
+        margin:0;
+        padding:0;
+        background-color:rgba(168,168,168);
+ }
+
+</style>
+</head>
+<body>
+    <canvas id="cw"></canvas>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "pin": 12,
+    "valor": 0,
+    "js": "fetch(\"192.168.4.2:8000/?isdl=12\");",
+    "id": -10,
+    "instruccion": "salidadigital"
+  },
+  {
+    "pin": 0,
+    "variable": "180",
+    "js": "fetch(\"192.168.4.2:8000/?im=0&pos=180\");",
+    "id": -13,
+    "instruccion": "servo"
+  }
+]

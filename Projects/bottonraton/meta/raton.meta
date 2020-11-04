@@ -1,0 +1,4 @@
+si  ( click = 0 )
+    fondo ( #FF36AF38 ) 
+texto ( "+click+" , 50 , 50 )
+

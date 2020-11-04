@@ -1,0 +1,42 @@
+[
+  {
+    "color": 0,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#000000';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "instruccion": "fondo"
+  },
+  {
+    "valorfinal": 300,
+    "valorini": 0,
+    "js": "for( ciclo =0; ciclo < 300 ; ciclo = ciclo +30 ){",
+    "incremento": 30,
+    "id": 111,
+    "condicion": "<",
+    "instruccion": "para"
+  },
+  {
+    "vmaximo": 255,
+    "para": true,
+    "variable": "color",
+    "js": "color = Math.random() *255;",
+    "id": 97,
+    "instruccion": "aleatorio"
+  },
+  {
+    "para": true,
+    "js": "c.fillStyle = 'rgba('+color+', '+color+', '+color+', 1)';",
+    "id": 102,
+    "colorv": "color",
+    "instruccion": "relleno"
+  },
+  {
+    "para": true,
+    "tx": 20,
+    "ty": 20,
+    "py": 80,
+    "js": " c.fillRect(ciclo, 80, 20, 20);\n c.strokeRect(ciclo, 80, 20, 20);\n",
+    "id": 114,
+    "instruccion": "rectangulo",
+    "pxv": "ciclo"
+  }
+]

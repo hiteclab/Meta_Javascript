@@ -1,0 +1,4 @@
+leerparametro ( data , state )
+si  ( data = 1 )
+    fondo ( #FFBD3338 ) 
+

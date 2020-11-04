@@ -1,0 +1,63 @@
+[
+  {
+    "js": "c.strokeStyle = 'rgba(0, 0, 0, 0)';",
+    "id": -115,
+    "instruccion": "sinlinea"
+  },
+  {
+    "js": "c.fillStyle = \"#3CC738\";",
+    "id": 102,
+    "colorh": "FF3CC738",
+    "instruccion": "relleno"
+  },
+  {
+    "variable": "contador",
+    "valor": "0.1",
+    "js": "contador = contador + 0.1;",
+    "id": 62,
+    "instruccion": "sumar"
+  },
+  {
+    "valor1v": "contador",
+    "visible": true,
+    "js": "if( contador > 3 )",
+    "id": 105,
+    "valor2": "3",
+    "condicion": ">",
+    "instruccion": "si"
+  },
+  {
+    "vmaximo": 1900,
+    "si": true,
+    "variable": "px",
+    "js": "px = Math.random() *1900;",
+    "id": 97,
+    "instruccion": "aleatorio"
+  },
+  {
+    "vmaximo": 1040,
+    "si": true,
+    "variable": "py",
+    "js": "py = Math.random() *1040;",
+    "id": 97,
+    "instruccion": "aleatorio"
+  },
+  {
+    "tx": 40,
+    "ty": 40,
+    "si": true,
+    "js": " c.fillRect(px, py, 40, 40);\n c.strokeRect(px, py, 40, 40);\n",
+    "id": 114,
+    "pyv": "py",
+    "instruccion": "rectangulo",
+    "pxv": "px"
+  },
+  {
+    "si": true,
+    "variable": "contador",
+    "valor": "0",
+    "js": "contador = 0;",
+    "id": 61,
+    "instruccion": "asignar"
+  }
+]

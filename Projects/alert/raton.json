@@ -1,0 +1,6 @@
+[{
+  "codigo": "alert(\"12345\");",
+  "js": "alert(\"12345\");",
+  "id": 40,
+  "instruccion": "codigonativo"
+}]

@@ -1,0 +1,26 @@
+[
+  {
+    "valor1v": "click",
+    "visible": true,
+    "js": "if( click == 0 )",
+    "id": 105,
+    "valor2": "0",
+    "condicion": "=",
+    "instruccion": "si"
+  },
+  {
+    "si": true,
+    "js": " lastfill = c.fillStyle;\n c.fillStyle = '#36AF38';\n c.fillRect(0,0,cw.width, cw.height);\n c.fillStyle = lastfill;",
+    "id": 98,
+    "colorh": "FF36AF38",
+    "instruccion": "fondo"
+  },
+  {
+    "texto": "\"+click+\"",
+    "px": 50,
+    "py": 50,
+    "js": "c.fillText(\"\"+click+\"\",50, 50);",
+    "id": 116,
+    "instruccion": "texto"
+  }
+]

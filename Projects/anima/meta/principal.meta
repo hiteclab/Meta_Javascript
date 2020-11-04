@@ -1,0 +1,9 @@
+fondo ( px ) 
+sinlínea
+sumar ( px , 0.5 )
+restar ( py , 0.5 )
+relleno ( #FFF9DF38 ) 
+elipse ( 200 , py , 200 , 200 )
+relleno ( #FF134F9F ) 
+rectángulo ( 0 , 700 , ancho , 400 )
+
