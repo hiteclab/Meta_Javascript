@@ -1,3 +1,0 @@
-// Generated with Meta_Javascript Alpha 1.2
-// https://github.com/hiteclab/Meta_Javascript/releases
-

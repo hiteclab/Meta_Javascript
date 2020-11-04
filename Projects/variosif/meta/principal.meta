@@ -1,5 +1,0 @@
-fondo ( #FF349C38 ) 
-si  ( ratonX > 10 )
-si  ( ratonX < 50 )
-    rectángulo ( 10 , 10 , 40 , alto )
-

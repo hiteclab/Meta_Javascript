@@ -1,8 +1,0 @@
-[{
-  "js": "video.setAttribute(\"src\", \"data/BigBuckBunny.mp4\");\n video.currentTime = 0;\n video.load();\n video.play();\n video.style.left = ratonX+'px';\n video.style.top = ratonY+'px';",
-  "id": 118,
-  "pyv": "ratonY",
-  "nombre": "BigBuckBunny.mp4",
-  "instruccion": "video",
-  "pxv": "ratonX"
-}]

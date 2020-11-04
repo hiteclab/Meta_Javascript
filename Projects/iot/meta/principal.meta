@@ -1,7 +1,0 @@
-entradadigital ( 4, esp ) IoTControllerAP
-si  ( esp > 0 )
-    fondo ( #FF52D938 ) 
-Sino           fondo ( #FFD24638 ) 
-entradaanalógica ( 0, giro ) IoTControllerAP
-texto ( "+giro+" , 20 , 20 )
-
